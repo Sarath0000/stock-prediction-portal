@@ -23,7 +23,11 @@ const Header = () => {
 
         <div>
           {isloggedin ?(
+            <>
+            <Button text='Dashboard' class='btn-info' url="/dashboard"/>
+            &nbsp;
             <button className='btn btn-danger' onClick={handlelogout}>Logout</button>
+            </>
           ) : (
             <>
             {/* props name (class) */}

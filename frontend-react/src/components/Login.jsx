@@ -32,8 +32,8 @@ const Login = () => {
       localStorage.setItem('accessToken', response.data.access)
       localStorage.setItem('refreshToken', response.data.refresh)
       setisloggedin(true)
-      // after login navigate to home page
-      navigate('/')
+      // after login navigate to dashboard page
+      navigate('/dashboard')
     }catch(error){
       seterror('Invalid Details')
     }finally{
